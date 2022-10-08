@@ -1,9 +1,10 @@
+package day1;
+
 /**
- * @date:2022/10/3 18:14
+ * @time : 2022/10/8 57
  * @author: bgcode
  */
-
-public class day9 {
+public class shuzu {
     public static void main(String[] args) {
         double[] hens = {1, 2, 3, 4, 12, 21, 11, 9, 3};//数组定义方法double[] hens = {1, 2, 3, 4};或double hens []= {1, 2, 3, 4};
         int x = 0;
@@ -42,4 +43,5 @@ public class day9 {
             System.out.print(arr3[i]);//动态替换数组
         }
     }
+
 }

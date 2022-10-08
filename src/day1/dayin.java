@@ -1,11 +1,12 @@
-/**
- * @date:2022/10/3 01:33
- * @author : bgcode
- */
+package day1;
 
 import java.util.Scanner;
 
-public class day5 {
+/**
+ * @time : 2022/10/8 50
+ * @author: bgcode
+ */
+public class dayin {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入打印空心三角的层数");
@@ -27,4 +28,5 @@ public class day5 {
         }
         System.out.print("高为" + high + "层的空心三角已打印");
     }
+
 }

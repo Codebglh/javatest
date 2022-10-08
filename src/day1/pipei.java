@@ -1,14 +1,12 @@
-/**
- * @author : bgcode
- * @date:2022/10/3 10:39
- */
+package day1;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-public class day6 {
-
+/**
+ * @time : 2022/10/8 45
+ * @author: bgcode
+ */
+public class pipei {
     public static void main(String[] args) {
         for (int i = 3; i >= 1; i--) {
             Scanner myScanner = new Scanner(System.in);
@@ -30,4 +28,5 @@ public class day6 {
             }
         }
     }
+
 }

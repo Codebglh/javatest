@@ -1,11 +1,12 @@
-/**
- * @date:2022/10/2 14:18
- * @author : bgcode
- */
+package day1;
+
 import java.util.Scanner;
 
-
-public class day2 {
+/**
+ * @time : 2022/10/8 54
+ * @author: bgcode
+ */
+public class change {
     public static void main(String[] args) {
         //变量有三要素：（类型，名称，值）
         int a = 2;
@@ -67,6 +68,5 @@ public class day2 {
         }
     }
 
+
 }
-
-

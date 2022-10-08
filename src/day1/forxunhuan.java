@@ -1,11 +1,12 @@
-/**
- * @author : bgcode
- * @date:2022/10/2 13:55
- */
+package day1;
 
 import java.util.Scanner;
 
-public class day4 {
+/**
+ * @time : 2022/10/8 31
+ * @author: bgcode
+ */
+public class forxunhuan {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
         double a = 0;//累计所有学生成绩
@@ -29,4 +30,5 @@ public class day4 {
         }
         System.out.println("总分为" + a + "总平均分为" + a / 15 + "总及格人数为" + d);
     }
+
 }

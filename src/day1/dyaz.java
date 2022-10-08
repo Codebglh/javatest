@@ -1,9 +1,10 @@
+package day1;
+
 /**
- * @date:2022/10/3 15:21
+ * @time : 2022/10/8 23
  * @author: bgcode
  */
-//char定义的是单引号''也能表示数
-public class day8 {
+public class dyaz {
     public static void main(String[] args) {
         char x = 'a';
         int y = x + 1;
@@ -17,4 +18,5 @@ public class day8 {
             System.out.print(v);
         }
     }
+
 }

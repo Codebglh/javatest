@@ -1,8 +1,10 @@
+package day1;
+
 /**
- * @date:2022/10/4 18:01
+ * @time : 2022/10/8 31
  * @author: bgcode
  */
-public class day12 {
+public class shuzutihuan {
     public static void main(String[] args) {
 //        int[][] arr = {{1, 2, 3, 4, 5, 6}, {1, 2, 3, 4, 5, 6}};//二维数组
 //        for (int i = 0; i < arr.length; i++) {
@@ -66,4 +68,5 @@ public class day12 {
             System.out.print(yh[i] + "\t");
         }
     }
+
 }
