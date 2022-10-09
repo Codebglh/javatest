@@ -18,7 +18,7 @@ public class bahuangh {
         return true;
     }
 
-    public void print(int[] a, int c) {
+    public void print(int c) {
         System.out.print("第" + c + "次");
         for (int i = 1; i < a.length; i++) {
 
@@ -30,13 +30,13 @@ public class bahuangh {
     public void put(int b) {
 
         if (b == 9) {
-            print(a, c);
+            print(c);
             c++;
             return;
         }
         for (int i = 1; i < 9; i++) {
             a[b] = i;
-            if (judge(a[b])) {
+            if (judge(b)) {
                 put(b + 1);
 
 
