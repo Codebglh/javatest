@@ -23,6 +23,13 @@ public class aa {
         d.print(b12);
         Circle r = new Circle(2);
         r.print(r.r);
+        Cale cale = new Cale(1, 0);
+        Double sdsd = cale.calculate3(cale.a, cale.b);
+        if (sdsd == null) {
+            System.out.print("除数为0");
+        } else {
+            System.out.print(sdsd);
+        }
     }
 }
 
@@ -64,7 +71,7 @@ class Book {
         if (c > 150) {
             return this.price = 150;
 
-        } else if (c <= 150 && c > 100) {
+        } else if (c > 100) {
             return this.price = 100;
         } else {
             return this.price = c;
@@ -111,5 +118,36 @@ class Circle {
 
     public void print(double r) {
         System.out.print("半径" + r + "周长" + this.C(r) + "面积" + this.S(r));
+    }
+}
+
+class Cale {
+    double a;
+    double b;
+
+    public Cale(double a, double b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    public double calculate1(double a, double b) {
+        return this.a + this.b;
+    }
+
+    public double calculate2(double a, double b) {
+        return this.a * this.b;
+    }
+
+    public Double calculate3(double a, double b) {
+        if (this.b == 0) {
+            return null;
+        } else {
+            double c = this.a / this.b;
+            return c;
+        }
+    }
+
+    public double calculate4(double a, double b) {
+        return this.a - this.b;
     }
 }

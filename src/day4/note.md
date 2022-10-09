@@ -147,3 +147,30 @@ class sss {
 ```
 
 #### 6.hashCode输出对象虚拟地址例如：this.hashCode()就可输出
+
+#### 7.new Object()创建一个匿名对象，只能被使用一次
+
+```java
+public class day1 {
+    int age = 10;
+
+    public void age1() {
+        age = 11;
+    }
+
+    public void age2() {
+        System.out.print(age++);
+    }
+
+    public static void main(String[] args) {
+        new day1().age1();
+        day1 ss = new day1();
+        ss.age2();
+        ss.age2();
+    }
+}
+```
+
+#### 8.i++与++i的区别
+
+一个是先赋值在自增一个是先自增在赋值
