@@ -87,6 +87,8 @@ public class aa {
 
 5.构造器的调用，由系统完成
 
+6.构造器一旦定义就会导致默认构造器失效
+
 ```java
 public class ss {
     public static void main(String[] args) {
@@ -98,9 +100,50 @@ class person {
     String name;
     int age;
 
-    public person(String names, int ages) {
+    //第一个构造器
+    public person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    //第二个构造器
+    public person(String names) {
         name = names;
-        age = ages;
+    }
+}
+
+class person1 {
+    String name;
+    //具有一个无参构造器，
+}
+```
+
+#### 5.this关键字
+
+可以访问属性，方法，构造器this(参数)；访问构造器，在构造器中必须在第一句。只能在类内部使用。
+
+```java
+public class tsshis {
+    public static void main(String[] args) {
+        sss his = new sss("sss", 21);
+    }
+}
+
+class sss {
+    int age;
+    int name;
+
+    public sss(String name, int age) {
+        this.name = name;
+        this.age = age;
+        this.qsss();
+        qsss();
+    }
+
+    public void qsss() {
+        System.out.println("qsss");
     }
 }
 ```
+
+#### 6.hashCode输出对象虚拟地址例如：this.hashCode()就可输出

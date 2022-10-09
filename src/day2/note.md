@@ -30,7 +30,7 @@ public class day1 {
 
 #### 3.类在内存中的布局
 
-![流程图](https://cdn.jsdelivr.net/gh/Codebglh/java/img/image-20221004220011506.png)
+![流程图](https://cdn.jsdelivr.net/gh/Codebglh/javatest/img/image-20221004220011506.png)
 
 #### 4.打印类
 
