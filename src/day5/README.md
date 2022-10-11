@@ -50,4 +50,30 @@
     3）java的动态绑定机制:
                 A.当调用对象方法时，该方法会和该对象的内存地址/运行类型绑定
                 B.当调用对象属性时没有动态绑定机制，那里声明就在那里使用
-    
+    4）多态数组
+                A.数组的定义类型为父类类型，里面实际保存元素为子类类型
+
+```java
+public class test {
+    public static void main(String[] args) {
+        Employee[] employee = new Employee[3];
+        employee[0] = new Employee(1, "dsfs");
+        employee[1] = new Worker(2, "dsfs");
+        employee[2] = new Manage(3, "dsfs", 54646);
+        for (int i = 0; i < employee.length; i++) {
+            if (employee[i] instanceof Worker) {
+                System.out.println(employee[i].getAnnual());
+            } else if (employee[i] instanceof Manage) {
+                System.out.println(employee[i].getAnnual());
+            } else {
+                System.out.println(employee[i].getAnnual());
+            }
+        }
+    }
+}
+```
+
+#### 5.equals与==的对比
+
+    ==判断对象是判断地址是否相等
+    equals是判断基本数据类型值相等
